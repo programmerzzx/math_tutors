@@ -277,7 +277,24 @@ def analyze_image_with_deepseek(base64_str: str, level: str = 'junior') -> dict:
         return {
             "success": False,
             "error": f"图片分析错误: {str(e)}"
+                }
+
+
+@app.route('/', methods=['GET'])
+def index():
+    """首页"""
+    return jsonify({
+        "service": "全学段数学证明导师系统",
+        "version": "2.0.0",
+        "endpoints": {
+            "health": "/health",
+            "analyze": "/api/analyze (POST)",
+            "chat": "/api/chat (POST)",
+            "levels": "/api/levels",
+            "hint": "/api/hint (POST)",
+            "validate": "/api/validate (POST)"
         }
+    })
 
 
 @app.route('/health', methods=['GET'])
