@@ -1,0 +1,12 @@
+[
+    {"id": 1, "title": "群定义", "content": "证明(Z,+)是群", "difficulty": "easy", "answer": "验证结合律、单位元、逆元"},
+    {"id": 2, "title": "子群判定", "content": "证明：H={2^n | n∈Z}是Q*的子群", "difficulty": "medium", "answer": "验证封闭性和逆元"},
+    {"id": 3, "title": "同态", "content": "证明：det: GL(n,R) → R*是群同态", "difficulty": "medium", "answer": "验证det(AB)=det(A)det(B)"},
+    {"id": 4, "title": "同构", "content": "证明：R与R×R不同构", "difficulty": "hard", "answer": "利用阿贝尔群性质"},
+    {"id": 5, "title": "循环群", "content": "证明：循环群的子群仍是循环群", "difficulty": "medium", "answer": "设子群H={g^k}，证明H=<g^d>"},
+    {"id": 6, "title": "Lagrange定理", "content": "应用Lagrange定理证明：素数阶群是循环群", "difficulty": "medium", "answer": "利用生成元的存在性"},
+    {"id": 7, "title": "正规子群", "content": "证明：Abel群的子群都是正规子群", "difficulty": "easy", "answer": "利用交换性"},
+    {"id": 8, "title": "商群", "content": "证明：Z/nZ是循环群", "difficulty": "easy", "answer": "[1]是生成元"},
+    {"id": 9, "title": "同态基本定理", "content": "叙述并证明群同态基本定理", "difficulty": "hard", "answer": "构造自然同态"},
+    {"id": 10, "title": "Sylow定理", "content": "应用Sylow定理证明：60阶群不是单群", "difficulty": "hard", "answer": "分析60=2²×3×5"}
+]

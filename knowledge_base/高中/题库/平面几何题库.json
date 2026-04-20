@@ -1,0 +1,12 @@
+[
+    {"id": 1, "title": "全等三角形", "content": "证明：SSS三角形全等", "difficulty": "easy", "answer": "三边相等则全等"},
+    {"id": 2, "title": "平行线", "content": "证明：内错角相等则两直线平行", "difficulty": "easy", "answer": "内错角相等，两直线平行"},
+    {"id": 3, "title": "垂直", "content": "证明：等腰三角形三线合一", "difficulty": "medium", "answer": "等腰三角形底边的高、中线、角平分线重合"},
+    {"id": 4, "title": "角度", "content": "证明：三角形内角和为180°", "difficulty": "easy", "answer": "过顶点作平行线，利用平行线性质"},
+    {"id": 5, "title": "圆", "content": "证明：同弧所对圆周角相等", "difficulty": "medium", "answer": "利用圆心角是圆周角的两倍"},
+    {"id": 6, "title": "四边形", "content": "证明：平行四边形对角线互相平分", "difficulty": "medium", "answer": "利用全等三角形"},
+    {"id": 7, "title": "面积", "content": "证明：相似三角形面积比等于相似比的平方", "difficulty": "medium", "answer": "利用相似比"},
+    {"id": 8, "title": "射影定理", "content": "证明：直角三角形射影定理", "difficulty": "hard", "answer": "利用相似三角形"},
+    {"id": 9, "title": "角平分线定理", "content": "证明：角平分线分对边成比例", "difficulty": "medium", "answer": "利用面积法或相似"},
+    {"id": 10, "title": "梅涅劳斯定理", "content": "证明：梅涅劳斯定理", "difficulty": "hard", "answer": "利用平行线分线段成比例"}
+]

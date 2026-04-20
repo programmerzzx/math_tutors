@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "三角形全等证明（一）",
+        "content": "已知：如图，在△ABC中，AB = AC，D是BC的中点。\n求证：AD平分∠BAC",
+        "difficulty": "easy",
+        "knowledge_points": ["全等三角形", "等腰三角形"],
+        "answer": "证明：\n在△ABD和△ACD中\nAB = AC（已知）\nBD = CD（D是BC中点）\nAD = AD（公共边）\n∴ △ABD ≅ △ACD（SSS）\n∴ ∠BAD = ∠CAD\n即 AD平分∠BAC"
+    },
+    {
+        "id": 2,
+        "title": "三角形全等证明（二）",
+        "content": "已知：如图，在△ABC中，AB = AC，E、F分别是AB、AC上的点，且AE = AF。\n求证：∠ABF = ∠ACE",
+        "difficulty": "medium",
+        "knowledge_points": ["全等三角形", "等腰三角形"],
+        "answer": "证明：\n在△ABF和△ACE中\nAB = AC（已知）\n∠A = ∠A（公共角）\nAE = AF（已知）\n∴ △ABF ≅ △ACE（SAS）\n∴ ∠ABF = ∠ACE"
+    },
+    {
+        "id": 3,
+        "title": "平行线证明",
+        "content": "已知：如图，直线AB、CD被直线EF所截，∠1 = ∠2，∠3 = 110°。\n求证：AB ∥ CD",
+        "difficulty": "easy",
+        "knowledge_points": ["平行线判定", "对顶角"],
+        "answer": "证明：\n∵ ∠1 = ∠2（已知）\n且∠1和∠2是对顶角\n∴ ∠2 = 110°（对顶角相等）\n∵ ∠3 = 110°（已知）\n∴ ∠2 = ∠3\n∴ AB ∥ CD（同位角相等，两直线平行）"
+    },
+    {
+        "id": 4,
+        "title": "角度证明",
+        "content": "已知：如图，在△ABC中，∠C = 90°，D是AB的中点。\n求证：CD = AD = BD",
+        "difficulty": "medium",
+        "knowledge_points": ["直角三角形", "中线", "斜边中线"],
+        "answer": "证明：\n过D作DE⊥AC于E\n∵ ∠C = 90°\n∴ DE ∥ BC\n∵ D是AB中点\n∴ E是AC中点\n∴ DE = BC/2\n在Rt△ADC中\nAD² = AC² + CD²\n同理 BD² = BC² + CD²\n∴ AD = BD = CD（斜边中线等于斜边一半）"
+    },
+    {
+        "id": 5,
+        "title": "四边形证明",
+        "content": "已知：如图，在平行四边形ABCD中，E、F分别是AB、CD的中点。\n求证：DE = BF",
+        "difficulty": "medium",
+        "knowledge_points": ["平行四边形", "全等三角形"],
+        "answer": "证明：\n连接DF、BE\n∵ ABCD是平行四边形\n∴ AB ∥ CD，AD ∥ BC\n∴ ∠ABF = ∠CDF\n在△ABF和△CDF中\nAB = CD（平行四边形对边相等）\n∠ABF = ∠CDF（已证）\nBF = DF（E、F是中点）\n∴ △ABF ≅ △CDF\n∴ DE = BF"
+    }
+]

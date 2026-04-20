@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全学段数学证明导师系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>📚 全学段数学证明导师系统</h1>
+            <p class="subtitle">集成初中、高中、大学三个学段的智能数学证明辅导</p>
+        </header>
+
+        <!-- 学段选择 -->
+        <section class="level-selector">
+            <h2>选择学段</h2>
+            <div class="level-buttons">
+                <button class="level-btn" data-level="junior_high">
+                    <span class="level-icon">📘</span>
+                    <span class="level-name">初中数学证明</span>
+                    <span class="level-version">v1.0</span>
+                </button>
+                <button class="level-btn" data-level="senior_high">
+                    <span class="level-icon">📗</span>
+                    <span class="level-name">高中数学证明</span>
+                    <span class="level-version">v3.0</span>
+                </button>
+                <button class="level-btn" data-level="university">
+                    <span class="level-icon">📕</span>
+                    <span class="level-name">大学数学证明</span>
+                    <span class="level-version">v7.1</span>
+                </button>
+                <button class="level-btn auto-detect" data-level="auto">
+                    <span class="level-icon">🤖</span>
+                    <span class="level-name">智能识别</span>
+                    <span class="level-version">自动</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- 输入区域 -->
+        <section class="input-section">
+            <h2>输入题目</h2>
+            <div class="input-tabs">
+                <button class="tab-btn active" data-tab="text">文本输入</button>
+                <button class="tab-btn" data-tab="image">图片上传</button>
+            </div>
+            
+            <!-- 文本输入 -->
+            <div class="tab-content active" id="text-input">
+                <textarea id="problem-text" placeholder="请输入数学证明题目..."></textarea>
+            </div>
+            
+            <!-- 图片上传 -->
+            <div class="tab-content" id="image-input">
+                <div class="upload-area" id="upload-area">
+                    <input type="file" id="file-input" accept="image/*" hidden>
+                    <div class="upload-placeholder">
+                        <span class="upload-icon">📷</span>
+                        <p>点击上传证明题图片</p>
+                        <p class="upload-hint">支持 PNG、JPG、GIF 格式</p>
+                    </div>
+                    <div class="preview-area" id="preview-area" style="display: none;">
+                        <img id="preview-image" alt="预览">
+                        <button class="remove-btn" id="remove-btn">×</button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="analyze-btn" id="analyze-btn">
+                <span>🔍</span> 开始分析
+            </button>
+        </section>
+
+        <!-- 加载状态 -->
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>正在分析题目...</p>
+        </div>
+
+        <!-- 结果展示 -->
+        <section class="result-section" id="result-section" style="display: none;">
+            <h2>📊 分析结果</h2>
+            
+            <!-- 学段标签 -->
+            <div class="level-tag" id="level-tag">
+                <span class="tag-icon">📘</span>
+                <span class="tag-text">初中数学</span>
+            </div>
+
+            <!-- 识别置信度 -->
+            <div class="confidence-bar">
+                <span>识别置信度：</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="confidence-fill"></div>
+                </div>
+                <span class="confidence-value" id="confidence-value">95%</span>
+            </div>
+
+            <!-- 分析内容 -->
+            <div class="analysis-content" id="analysis-content">
+                <!-- 动态内容 -->
+            </div>
+
+            <!-- 证明方法 -->
+            <div class="proof-methods" id="proof-methods">
+                <h3>📝 证明方法</h3>
+                <div class="method-list" id="method-list">
+                    <!-- 动态内容 -->
+                </div>
+            </div>
+
+            <!-- 关键步骤 -->
+            <div class="key-steps" id="key-steps">
+                <h3>🔑 关键步骤</h3>
+                <ol class="steps-list" id="steps-list">
+                    <!-- 动态内容 -->
+                </ol>
+            </div>
+
+            <!-- 评分标准 -->
+            <div class="grading-criteria" id="grading-criteria">
+                <h3>⭐ 评分标准</h3>
+                <table class="criteria-table">
+                    <thead>
+                        <tr>
+                            <th>评分项</th>
+                            <th>分值</th>
+                        </tr>
+                    </thead>
+                    <tbody id="criteria-body">
+                        <!-- 动态内容 -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 常见错误 -->
+            <div class="common-errors" id="common-errors">
+                <h3>⚠️ 常见失分点</h3>
+                <ul class="error-list" id="error-list">
+                    <!-- 动态内容 -->
+                </ul>
+            </div>
+
+            <!-- 解题提示 -->
+            <div class="tips" id="tips">
+                <h3>💡 解题提示</h3>
+                <ul class="tips-list" id="tips-list">
+                    <!-- 动态内容 -->
+                </ul>
+            </div>
+
+            <!-- 推荐练习 -->
+            <div class="recommendations" id="recommendations">
+                <h3>📖 推荐练习</h3>
+                <div class="problem-cards" id="problem-cards">
+                    <!-- 动态内容 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 学习报告入口 -->
+        <section class="report-section">
+            <button class="report-btn" id="report-btn">
+                <span>📈</span> 查看学习报告
+            </button>
+        </section>
+
+        <!-- 学习报告弹窗 -->
+        <div class="modal" id="report-modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-modal">&times;</span>
+                <h2>📈 学习报告</h2>
+                <div class="report-content" id="report-content">
+                    <!-- 动态内容 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>全学段数学证明导师系统 v1.0 | 集成初中、高中、大学三个学段</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

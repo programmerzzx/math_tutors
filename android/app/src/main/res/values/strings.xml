@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">数学证明导师</string>
+    <string name="loading">正在加载...</string>
+    <string name="error_network">网络连接失败</string>
+    <string name="retry">重试</string>
+    <string name="cancel">取消</string>
+</resources>

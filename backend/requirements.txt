@@ -1,0 +1,15 @@
+# 全学段数学证明导师系统 - 后端依赖
+flask>=2.3.0
+flask-cors>=4.0.0
+werkzeug>=2.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+paddlepaddle>=2.5.0
+paddleocr>=2.7.0
+sympy>=1.12
+latex2sympy>=2.2.0
+networkx>=3.1
+scikit-learn>=1.3.0
+redis>=4.5.0
+json5>=0.9.0
+jieba>=0.42.0

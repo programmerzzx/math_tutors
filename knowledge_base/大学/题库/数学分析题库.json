@@ -1,0 +1,12 @@
+[
+    {"id": 1, "title": "极限ε-δ", "content": "证明：lim(x→0)x²=0", "difficulty": "easy", "answer": "∀ε>0，取δ=√ε，当|x|<δ时，有|x²|<ε"},
+    {"id": 2, "title": "连续性", "content": "证明：f(x)=x²在R上连续", "difficulty": "easy", "answer": "使用ε-δ语言"},
+    {"id": 3, "title": "导数定义", "content": "用定义求f(x)=x²的导数", "difficulty": "easy", "answer": "f'(x)=2x"},
+    {"id": 4, "title": "微分中值定理", "content": "证明：Lagrange中值定理", "difficulty": "hard", "answer": "构造辅助函数，使用Rolle定理"},
+    {"id": 5, "title": "Taylor展开", "content": "求e^x的Maclaurin展开", "difficulty": "medium", "answer": "e^x = 1 + x + x²/2! + ..."},
+    {"id": 6, "title": "积分计算", "content": "计算：∫x²dx", "difficulty": "easy", "answer": "x³/3 + C"},
+    {"id": 7, "title": "广义积分", "content": "判断∫₁^∞ 1/x^p dx的敛散性", "difficulty": "medium", "answer": "p>1收敛，p≤1发散"},
+    {"id": 8, "title": "级数收敛", "content": "判断∑1/n²的敛散性", "difficulty": "easy", "answer": "收敛（p=2>1）"},
+    {"id": 9, "title": "一致收敛", "content": "证明：x^n在[0,1-δ]上一致收敛", "difficulty": "hard", "answer": "利用Weierstrass M判别法"},
+    {"id": 10, "title": "可积条件", "content": "证明：有界且只有有限个间断点的函数可积", "difficulty": "hard", "answer": "利用Darboux和"}
+]

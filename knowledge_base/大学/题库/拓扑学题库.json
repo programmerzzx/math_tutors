@@ -1,0 +1,12 @@
+[
+    {"id": 1, "title": "度量空间", "content": "证明：d(x,y)=|x-y|是R上的度量", "difficulty": "easy", "answer": "验证正定性、对称性、三角不等式"},
+    {"id": 2, "title": "开集", "content": "证明：开集的任意并是开集", "difficulty": "easy", "answer": "利用开集定义"},
+    {"id": 3, "title": "闭集", "content": "证明：闭集的有限并是闭集", "difficulty": "easy", "answer": "利用德摩根律"},
+    {"id": 4, "title": "紧致性", "content": "证明：[0,1]是紧致的", "difficulty": "medium", "answer": "利用Heine-Borel定理"},
+    {"id": 5, "title": "连通", "content": "证明：R是连通的", "difficulty": "medium", "answer": "反证法"},
+    {"id": 6, "title": "道路连通", "content": "证明：R^n是道路连通的", "difficulty": "easy", "answer": "构造直线段"},
+    {"id": 7, "title": "连续映射", "content": "证明：连续映射的复合仍连续", "difficulty": "easy", "answer": "利用开集原像"},
+    {"id": 8, "title": "Tietze延拓", "content": "叙述Tietze延拓定理", "difficulty": "hard", "answer": "正规空间中的连续函数可延拓"},
+    {"id": 9, "title": "分离公理", "content": "证明：度量空间是Hausdorff的", "difficulty": "easy", "answer": "取不交开球"},
+    {"id": 10, "title": "商空间", "content": "证明：商映射是连续的", "difficulty": "medium", "answer": "利用商拓扑定义"}
+]

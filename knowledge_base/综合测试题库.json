@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "title": "三角形全等证明",
+        "content": "已知：如图，在△ABC中，AB = AC，D是BC的中点。求证：AD平分∠BAC",
+        "difficulty": "easy",
+        "knowledge_points": ["全等三角形", "等腰三角形"],
+        "answer": "证明：在△ABD和△ACD中，AB = AC（已知），BD = CD（D是BC中点），AD = AD（公共边），∴ △ABD ≅ △ACD（SSS），∴ ∠BAD = ∠CAD，即 AD平分∠BAC",
+        "level": "junior_high"
+    },
+    {
+        "id": 2,
+        "title": "平行线性质",
+        "content": "已知：如图，直线AB、CD被直线EF所截，∠1 = ∠2，∠3 = 110°。求证：AB ∥ CD",
+        "difficulty": "easy",
+        "knowledge_points": ["平行线判定", "对顶角"],
+        "answer": "证明：∵ ∠1 = ∠2（已知）且∠1和∠2是对顶角，∴ ∠2 = 110°，∵ ∠3 = 110°（已知），∴ ∠2 = ∠3，∴ AB ∥ CD（同位角相等，两直线平行）",
+        "level": "junior_high"
+    },
+    {
+        "id": 3,
+        "title": "角度证明",
+        "content": "已知：在△ABC中，∠C = 90°，D是AB的中点。求证：CD = AD = BD",
+        "difficulty": "medium",
+        "knowledge_points": ["直角三角形", "中线", "斜边中线"],
+        "answer": "证明：在Rt△ABC中，斜边AB上的中线等于斜边的一半。∴ CD = AB/2 = AD = BD",
+        "level": "junior_high"
+    },
+    {
+        "id": 4,
+        "title": "垂直证明",
+        "content": "已知：在△ABC中，AB = AC，AD是BC边上的高。求证：AD也是BC边上的中线和角平分线",
+        "difficulty": "medium",
+        "knowledge_points": ["等腰三角形", "三线合一"],
+        "answer": "证明：在△ABD和△ACD中，AB = AC（已知），∠BDA = ∠CDA = 90°（AD⊥BC），AD = AD（公共边），∴ △ABD ≅ △ACD（HL），∴ BD = CD，∠BAD = ∠CAD，即 AD是BC的中线和角平分线",
+        "level": "junior_high"
+    },
+    {
+        "id": 5,
+        "title": "四边形证明",
+        "content": "已知：如图，在平行四边形ABCD中，E、F分别是AB、CD的中点。求证：DE = BF",
+        "difficulty": "medium",
+        "knowledge_points": ["平行四边形", "全等三角形"],
+        "answer": "证明：连接DF、BE，∵ ABCD是平行四边形，∴ AB ∥ CD，AD ∥ BC，∴ ∠ABF = ∠CDF，在△ABF和△CDF中，AB = CD（平行四边形对边相等），∠ABF = ∠CDF（已证），BF = DF（E、F是中点），∴ △ABF ≅ △CDF（SAS），∴ DE = BF",
+        "level": "junior_high"
+    },
+    {
+        "id": 6,
+        "title": "数学归纳法",
+        "content": "用数学归纳法证明：1 + 3 + 5 + ... + (2n-1) = n²",
+        "difficulty": "medium",
+        "knowledge_points": ["数学归纳法", "数列求和"],
+        "answer": "证明：第一步：当n=1时，左边=1，右边=1²=1，等式成立。第二步：假设当n=k时成立，即1+3+5+...+(2k-1)=k²。第三步：当n=k+1时，左边=1+3+5+...+(2k-1)+(2k+1)=k²+(2k+1)=(k+1)²，右边=(k+1)²，等式成立。∴ 对任意正整数n，等式成立。",
+        "level": "senior_high"
+    },
+    {
+        "id": 7,
+        "title": "不等式证明",
+        "content": "已知a, b > 0，证明：a² + b² ≥ 2ab",
+        "difficulty": "easy",
+        "knowledge_points": ["不等式", "作差法"],
+        "answer": "证明：a² + b² - 2ab = (a-b)² ≥ 0，∴ a² + b² ≥ 2ab",
+        "level": "senior_high"
+    },
+    {
+        "id": 8,
+        "title": "立体几何",
+        "content": "在四棱锥P-ABCD中，PA⊥底面ABCD，底面ABCD为矩形。证明：PB⊥CD",
+        "difficulty": "medium",
+        "knowledge_points": ["线面垂直", "三垂线定理"],
+        "answer": "证明：∵ PA⊥底面ABCD，∴ PA⊥CD。∵ ABCD为矩形，∴ CD⊥AD。∴ CD⊥平面PAD。∵ P在平面PAD内，∴ CD⊥PD。由PA⊥CD和PD⊥CD，∴ CD⊥平面PAD上的两条相交直线PA和PD，∴ CD⊥平面PAD，因此CD⊥PD。但需再证PB⊥CD...（此处略）",
+        "level": "senior_high"
+    },
+    {
+        "id": 9,
+        "title": "数列递推",
+        "content": "已知数列{an}满足a₁=1，a₂=3，an+2=3an+1-2an。求证：an=2^n-1",
+        "difficulty": "hard",
+        "knowledge_points": ["数列递推", "第二数学归纳法"],
+        "answer": "证明：使用第二数学归纳法。第一步：n=1时，a₁=1=2¹-1，成立；n=2时，a₂=3=2²-1，成立。第二步：假设n≤k时成立，即ak=2^k-1，ak+1=2^(k+1)-1。第三步：ak+2=3ak+1-2ak=3(2^(k+1)-1)-2(2^k-1)=3·2^(k+1)-3-2^(k+1)+2=2·2^(k+1)-1=2^(k+2)-1。∴ 原命题成立。",
+        "level": "senior_high"
+    },
+    {
+        "id": 10,
+        "title": "函数单调性",
+        "content": "证明函数f(x)=x³在R上单调递增",
+        "difficulty": "easy",
+        "knowledge_points": ["函数单调性", "导数"],
+        "answer": "证明：f'(x)=3x²≥0，且f'(x)=0仅在x=0处取得。∴ f(x)在R上单调递增。",
+        "level": "senior_high"
+    },
+    {
+        "id": 11,
+        "title": "ε-δ语言证明极限",
+        "content": "用ε-δ语言证明：lim(x→1)(x²+1)=2",
+        "difficulty": "medium",
+        "knowledge_points": ["极限", "ε-δ语言"],
+        "answer": "证明：∀ε>0，要使|(x²+1)-2|=|x²-1|=|x-1||x+1|<ε。取δ=min{1, ε/3}，则当|x-1|<δ时，有|x+1|<3，∴|x²-1|<3|x-1|<3·ε/3=ε。∴ lim(x→1)(x²+1)=2",
+        "level": "university"
+    },
+    {
+        "id": 12,
+        "title": "群论证明",
+        "content": "设G是一个群，证明：对于任意g∈G，有(g⁻¹)⁻¹=g",
+        "difficulty": "easy",
+        "knowledge_points": ["群", "逆元"],
+        "answer": "证明：设e是G的单位元。∵ g⁻¹是g的逆元，∴ g·g⁻¹=g⁻¹·g=e。∴ g是g⁻¹的逆元，即(g⁻¹)⁻¹=g。",
+        "level": "university"
+    },
+    {
+        "id": 13,
+        "title": "拓扑学证明",
+        "content": "证明：R中区间(0,1)是连通的",
+        "difficulty": "medium",
+        "knowledge_points": ["连通性", "区间"],
+        "answer": "证明：假设(0,1)不连通，则存在非空开集U,V使得U∩V=∅且U∪V=(0,1)。取a∈U, b∈V，不妨设a<b。令S={x∈[a,b] | x∈U}，设c=sup S。则c∈[a,b]。由U和V都是闭集（开集在R中既开又闭当且仅当是空集或全集），得c∈U∩V，矛盾。∴ (0,1)连通。",
+        "level": "university"
+    },
+    {
+        "id": 14,
+        "title": "抽象代数证明",
+        "content": "证明：Z/nZ的子环与n的因子一一对应",
+        "difficulty": "hard",
+        "knowledge_points": ["环", "理想", "同构"],
+        "answer": "证明：设d|n，则(d)是Z的由d生成的主理想，且(d)/(n) ≅ Zd是Z/nZ的子环。反之，若R是Z/nZ的子环，则R对应Z中一个包含n的理想，即n的某个因子d所生成的主理想。∴ 子环与n的因子一一对应。",
+        "level": "university"
+    },
+    {
+        "id": 15,
+        "title": "实变函数证明",
+        "content": "证明：若f在[a,b]上可测，则|f|也可测",
+        "difficulty": "medium",
+        "knowledge_points": ["可测函数", "测度"],
+        "answer": "证明：∵ f可测，∴ 任意开集G，f⁻¹(G)可测。取任意开集U，令V=U∩(0,+∞)，W=U∩(-∞,0)。则|f|⁻¹(U)=f⁻¹(V∪W)=f⁻¹(V)∪f⁻¹(W)。∵ V,W都是开集，∴ f⁻¹(V), f⁻¹(W)可测。∴ |f|⁻¹(U)可测，即|f|可测。",
+        "level": "university"
+    }
+]
