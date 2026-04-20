@@ -277,7 +277,7 @@ def analyze_image_with_deepseek(base64_str: str, level: str = 'junior') -> dict:
         return {
             "success": False,
             "error": f"图片分析错误: {str(e)}"
-                }
+        }
 
 
 @app.route('/', methods=['GET'])
@@ -295,7 +295,6 @@ def index():
             "validate": "/api/validate (POST)"
         }
     })
-
 
 
 @app.route('/health', methods=['GET'])
