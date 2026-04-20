@@ -13,7 +13,7 @@ from datetime import datetime
 from io import BytesIO
 from PIL import Image
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -21,7 +21,10 @@ from dotenv import load_dotenv
 # 加载环境变量
 load_dotenv()
 
-app = Flask(__name__)
+# 获取前端目录路径
+FRONTEND_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'frontend')
+
+app = Flask(__name__, static_folder=FRONTEND_DIR)
 CORS(app)
 
 # DeepSeek API 配置
@@ -282,19 +285,14 @@ def analyze_image_with_deepseek(base64_str: str, level: str = 'junior') -> dict:
 
 @app.route('/', methods=['GET'])
 def index():
-    """首页"""
-    return jsonify({
-        "service": "全学段数学证明导师系统",
-        "version": "2.0.0",
-        "endpoints": {
-            "health": "/health",
-            "analyze": "/api/analyze (POST)",
-            "chat": "/api/chat (POST)",
-            "levels": "/api/levels",
-            "hint": "/api/hint (POST)",
-            "validate": "/api/validate (POST)"
-        }
-    })
+    """首页 - 返回HTML"""
+    return send_from_directory(FRONTEND_DIR, 'index.html')
+
+
+@app.route('/<path:filename>')
+def serve_static(filename):
+    """提供静态文件"""
+    return send_from_directory(FRONTEND_DIR, filename)
 
 
 @app.route('/health', methods=['GET'])
